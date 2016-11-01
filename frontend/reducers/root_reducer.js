@@ -1,7 +1,12 @@
+// frontend/reducers/root_reducer.jsx
+
+import { combineReducers } from 'redux';
+
+import BenchesReducer from './benches_reducer';
 import SessionReducer from './session_reducer';
-import {combineReducers} from 'redux';
 
 const RootReducer = combineReducers({
+  benches: BenchesReducer,
   session: SessionReducer
 });
 
